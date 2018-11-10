@@ -7,352 +7,360 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Page2</title>
     <style>
-        *{
-            margin:0px;
-            padding:0px;
-        }
-        .login_page_background{
-            width:100vw;
-            height:100vh;
-            overflow: hidden;
-            position: relative;
-        }
-        #Layer_6{
-            animation: move1 3s infinite linear alternate-reverse;
-        }
-        @keyframes move1{
-            0%{
-                transform: translate(10px, 10px);
-                opacity: 0;
-            }
-            100%{
-                transform: translate(30px, 30px);
-                opacity: 1;
-            }
-        }
-        #Layer_4{
-            animation: move2 2s infinite linear alternate-reverse;
-        }
-        @keyframes move2{
-            0%{
-                transform: translate(-10px, -20px);
-                opacity: 0;
-            }
-            100%{
-                transform: translate(-40px, -20px);
-                opacity: 1;
-            }
-        }
-        #Layer_10, #Layer_7{
-            animation: move3 6s infinite linear;
-        }
-        @keyframes move3{
-            0%{
-                transform: translate(-10px, -20px);
-                opacity: 0;
-            }
-            40%{
-                transform: translate(20px, 50px);
-                opacity: 1;
-            }
-            70%{
-                transform: translate(-30px, 60px);
-                opacity: 1;
-            }
-            100%{
-                transform: translate(80px, -80px);
-                opacity: 0;
-            }
-        }
-        #Layer_9{
-            animation: move4 10s infinite linear;
-        }
-        @keyframes move4{
-            0%{
-                transform: translate(-5px, -10px);
-                opacity: 0;
-            }
-            40%{
-                transform: translate(30px, 20px);
-                opacity: 1;
-            }
-            70%{
-                transform: translate(20px, -40px);
-                opacity: 1;
-            }
-            100%{
-                transform: translate(-50px, 60px);
-                opacity: 0;
-            }
-        }
-        #satlight{
-            animation: satlight 5s infinite linear alternate-reverse;
-        }
-        @keyframes satlight{
-            0%{
-                transform: translate(-5px, -10px);
-            }
-            100%{
-                transform: translate(75px, -10px);
-            }
-        }
-        #whiteStars{
-            animation: satlight 5s infinite linear alternate-reverse;
-        }
-        @keyframes satlight{
-            0%{
-                opacity: 0;
-                transform: translate(-5px, -10px);
-            }
-            50%{
-                opacity: 1;
-                transform: translate(5px, 10px);
-            }
-        }
-        #Layer_8{
-            animation: move10 5s infinite linear alternate-reverse;
-        }
-        @keyframes move10{
-            0%{
-                transform: translate(75px, -10px);
-            }
-            100%{
-                transform: translate(-5px, -10px);
-            }
-        }
-        #spaceMan{
-            animation: spaceman 10s infinite alternate-reverse;
-            transform-origin: center;
-            
-        }
-        @keyframes spaceman{
-            0%{
-                transform: translate(10px, 10px)
-                rotate(6deg);
-            }
-            30%{
-                transform: translate(-15px, -15px)
-                rotate(-13deg);
-            }
-            60%{
-                transform: translate(20px, -30px)
-                rotate(5deg);
-            }
-            80%{
-                transform: translate(30px, 30px)
-                rotate(40deg);
-            }
-            100%{
-                transform: translate(10px, 10px)
-                rotate(0deg);
-            }
-        }
-        #Rocket1{
-            opacity: 0;
-            animation: rocket1 12s infinite linear;
-        }
-        @keyframes rocket1{
-            0%{
-                transform: translate(50px, 50px);
-                opacity: 1;
-            }
-            70%{
-                transform: translate(1200px, -1300px);
-                opacity: 1;
-            }
-            71%, 100%{
-                opacity: 0;
-            }
-        }
-        #rocket2{
-            opacity: 0;
-            animation: rocket2 19s infinite linear;
-            animation-delay: 2s
-        }
-        @keyframes rocket2{
-            0%{
-                transform: translate(-10px, -10px);
-                opacity: 1;
-            }
-            70%{
-                transform: translate(1200px, 1000px);
-                opacity: 1;
-            }
-            71%, 100%{
-                opacity: 0;
-            }
-        }
-        #yellowstar{
-            animation : yellowstar 5s infinite linear;
-        }
-        @keyframes yellowstar{
-            0%{
-                opacity: 0;
-            }
-            40%{
-                opacity: 2;
-            }
-            41%, 100%{
-                opacity: 1;
-            }
-        }
-        #yellowstar2{
-            animation : yellowstar2 7s infinite linear;
-            animation-delay: 1s;
-        }
-        @keyframes yellowstar2{
-            0%{
-                opacity: 0;
-            }
-            40%{
-                opacity: 2;
-            }
-            41%, 100%{
-                opacity: 1;
-            }
-        }
-            .cls-1 {
-              isolation: isolate;
-            }
-      
-            .cls-2 {
-              fill: #071621;
-            }
-      
-            .cls-3, .cls-35 {
-              opacity: 0.3;
-            }
-      
-            .cls-4 {
-              fill: #ededed;
-            }
-      
-            .cls-5 {
-              fill: #8ea5a6;
-            }
-      
-            .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-24, .cls-25, .cls-26, .cls-27, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
-              fill-rule: evenodd;
-            }
-      
-            .cls-20, .cls-22, .cls-6 {
-              opacity: 0.2;
-            }
-      
-            .cls-17, .cls-22, .cls-6 {
-              mix-blend-mode: multiply;
-            }
-      
-            .cls-8 {
-              fill: #fe9773;
-            }
-      
-            .cls-9 {
-              fill: #5c6b6b;
-            }
-      
-            .cls-10 {
-              fill: #de4638;
-            }
-      
-            .cls-11 {
-              fill: #de5a38;
-            }
-      
-            .cls-12 {
-              fill: #fff;
-            }
-      
-            .cls-13 {
-              fill: #303030;
-            }
-      
-            .cls-14 {
-              fill: #418eaf;
-            }
-      
-            .cls-15 {
-              fill: #badde3;
-            }
-      
-            .cls-16 {
-              fill: #414d4d;
-            }
-      
-            .cls-17 {
-              opacity: 0.1;
-            }
-      
-            .cls-18 {
-              fill: #ee9a2d;
-            }
-      
-            .cls-19 {
-              fill: #99837f;
-            }
-      
-            .cls-21 {
-              fill: #eedea4;
-            }
-      
-            .cls-23 {
-              fill: #c2b485;
-            }
-      
-            .cls-24 {
-              fill: #a1bbbd;
-            }
-      
-            .cls-25 {
-              fill: #cfcfcf;
-            }
-      
-            .cls-26 {
-              fill: #a3a3a3;
-            }
-      
-            .cls-27 {
-              fill: #eed062;
-            }
-      
-            .cls-28, .cls-29 {
-              fill: #d9d9d9;
-            }
-      
-            .cls-30 {
-              fill: #d7e6d5;
-            }
-      
-            .cls-31 {
-              fill: #97a195;
-            }
-      
-            .cls-32 {
-              fill: #5d635c;
-            }
-      
-            .cls-33 {
-              fill: #626960;
-            }
-      
-            .cls-34 {
-              fill: #41a9af;
-            }
-            .login_page{
-                width:319px;
-                height:400px;
-                background-color:#fff;
-                padding:40px;
-                position: absolute;
-                top:50%;
-                right:200px;
-                transform:translate(0%, -50%);
-                box-shadow: 0px 2px 10px 3px #000;
-            }
-            .forgot{
-                text-align:right;
-                font-size:14px;
-            }
+       *{
+    margin:0px;
+    padding:0px;
+}
+.login_page_background{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+}
+#Layer_6{
+    animation: move1 3s infinite linear alternate-reverse;
+}
+@keyframes move1{
+    0%{
+        transform: translate(10px, 10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(30px, 30px);
+        opacity: 1;
+    }
+}
+#Layer_4{
+    animation: move2 2s infinite linear alternate-reverse;
+}
+@keyframes move2{
+    0%{
+        transform: translate(-10px, -20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-40px, -20px);
+        opacity: 1;
+    }
+}
+#Layer_10, #Layer_7{
+    animation: move3 6s infinite linear;
+}
+@keyframes move3{
+    0%{
+        transform: translate(-10px, -20px);
+        opacity: 0;
+    }
+    40%{
+        transform: translate(20px, 50px);
+        opacity: 1;
+    }
+    70%{
+        transform: translate(-30px, 60px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(80px, -80px);
+        opacity: 0;
+    }
+}
+#Layer_9{
+    animation: move4 10s infinite linear;
+}
+@keyframes move4{
+    0%{
+        transform: translate(-5px, -10px);
+        opacity: 0;
+    }
+    40%{
+        transform: translate(30px, 20px);
+        opacity: 1;
+    }
+    70%{
+        transform: translate(20px, -40px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-50px, 60px);
+        opacity: 0;
+    }
+}
+#satlight{
+    animation: satlight 5s infinite linear alternate-reverse;
+}
+@keyframes satlight{
+    0%{
+        transform: translate(-5px, -10px);
+    }
+    100%{
+        transform: translate(75px, -10px);
+    }
+}
+#whiteStars{
+    animation: satlight 5s infinite linear alternate-reverse;
+}
+@keyframes satlight{
+    0%{
+        opacity: 0;
+        transform: translate(-5px, -10px);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(5px, 10px);
+    }
+}
+#Layer_8{
+    animation: move10 5s infinite linear alternate-reverse;
+}
+@keyframes move10{
+    0%{
+        transform: translate(75px, -10px);
+    }
+    100%{
+        transform: translate(-5px, -10px);
+    }
+}
+#spaceMan{
+    animation: spaceman 10s infinite alternate-reverse;
+    transform-origin: center;
+    
+}
+@keyframes spaceman{
+    0%{
+        transform: translate(10px, 10px)
+        rotate(6deg);
+    }
+    30%{
+        transform: translate(-15px, -15px)
+        rotate(-13deg);
+    }
+    60%{
+        transform: translate(20px, -30px)
+        rotate(5deg);
+    }
+    80%{
+        transform: translate(30px, 30px)
+        rotate(40deg);
+    }
+    100%{
+        transform: translate(10px, 10px)
+        rotate(0deg);
+    }
+}
+#Rocket1{
+    opacity: 0;
+    animation: rocket1 12s infinite linear;
+}
+@keyframes rocket1{
+    0%{
+        transform: translate(50px, 50px);
+        opacity: 1;
+    }
+    70%{
+        transform: translate(1200px, -1300px);
+        opacity: 1;
+    }
+    71%, 100%{
+        opacity: 0;
+    }
+}
+#rocket2{
+    opacity: 0;
+    animation: rocket2 19s infinite linear;
+    animation-delay: 2s
+}
+@keyframes rocket2{
+    0%{
+        transform: translate(-10px, -10px);
+        opacity: 1;
+    }
+    70%{
+        transform: translate(1200px, 1000px);
+        opacity: 1;
+    }
+    71%, 100%{
+        opacity: 0;
+    }
+}
+#yellowstar{
+    animation : yellowstar 5s infinite linear;
+}
+@keyframes yellowstar{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 2;
+    }
+    41%, 100%{
+        opacity: 1;
+    }
+}
+#yellowstar2{
+    animation : yellowstar2 7s infinite linear;
+    animation-delay: 1s;
+}
+@keyframes yellowstar2{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 2;
+    }
+    41%, 100%{
+        opacity: 1;
+    }
+}
+    .cls-1 {
+      isolation: isolate;
+    }
+
+    .cls-2 {
+      fill: #071621;
+    }
+
+    .cls-3, .cls-35 {
+      opacity: 0.3;
+    }
+
+    .cls-4 {
+      fill: #ededed;
+    }
+
+    .cls-5 {
+      fill: #8ea5a6;
+    }
+
+    .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-24, .cls-25, .cls-26, .cls-27, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+      fill-rule: evenodd;
+    }
+
+    .cls-20, .cls-22, .cls-6 {
+      opacity: 0.2;
+    }
+
+    .cls-17, .cls-22, .cls-6 {
+      mix-blend-mode: multiply;
+    }
+
+    .cls-8 {
+      fill: #fe9773;
+    }
+
+    .cls-9 {
+      fill: #5c6b6b;
+    }
+
+    .cls-10 {
+      fill: #de4638;
+    }
+
+    .cls-11 {
+      fill: #de5a38;
+    }
+
+    .cls-12 {
+      fill: #fff;
+    }
+
+    .cls-13 {
+      fill: #303030;
+    }
+
+    .cls-14 {
+      fill: #418eaf;
+    }
+
+    .cls-15 {
+      fill: #badde3;
+    }
+
+    .cls-16 {
+      fill: #414d4d;
+    }
+
+    .cls-17 {
+      opacity: 0.1;
+    }
+
+    .cls-18 {
+      fill: #ee9a2d;
+    }
+
+    .cls-19 {
+      fill: #99837f;
+    }
+
+    .cls-21 {
+      fill: #eedea4;
+    }
+
+    .cls-23 {
+      fill: #c2b485;
+    }
+
+    .cls-24 {
+      fill: #a1bbbd;
+    }
+
+    .cls-25 {
+      fill: #cfcfcf;
+    }
+
+    .cls-26 {
+      fill: #a3a3a3;
+    }
+
+    .cls-27 {
+      fill: #eed062;
+    }
+
+    .cls-28, .cls-29 {
+      fill: #d9d9d9;
+    }
+
+    .cls-30 {
+      fill: #d7e6d5;
+    }
+
+    .cls-31 {
+      fill: #97a195;
+    }
+
+    .cls-32 {
+      fill: #5d635c;
+    }
+
+    .cls-33 {
+      fill: #626960;
+    }
+
+    .cls-34 {
+      fill: #41a9af;
+    }
+    .login_page{
+        width:319px;
+        height:370px;
+        background-color:#fff;
+        padding:35px;
+        position: absolute;
+        top:50%;
+        right:5%;
+        transform:translate(0%, -50%);
+        box-shadow: 0px 2px 10px 3px #000;
+    }
+    .forgot{
+        text-align:right;
+        font-size:13px;
+        margin-top:10px;
+    }
+    .login_page input::placeholder{
+        font-size:12px;
+        padding-left:10px;
+    }
+    .login_page label{
+        margin-top:20px;
+    }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
